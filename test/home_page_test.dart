@@ -4,7 +4,9 @@ import 'package:widget_testing/home_page.dart';
 
 void main() {
   //formula GIVEN, WHEN, THEN
-  testWidgets('description', (tester) async {
+  testWidgets(
+      'GIVEN homepage the value of count widget 0 WHEN the increment button is tapped THEN the value of count widget should be 1',
+      (tester) async {
     //step1 pump the homepage
     await tester.pumpWidget(const MaterialApp(home: HomePage()));
 
